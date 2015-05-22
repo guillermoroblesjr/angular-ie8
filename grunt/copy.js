@@ -17,12 +17,12 @@ module.exports = {
       // 	// filter: 'isFile'
       // },
 
-		{
-		    expand: true,
-		    cwd: '',
-		    src: ['html/**', 'css/**', 'js/**', 'bower_components/**'],
-		    dest: ''
-		}
+		// {
+		//     expand: true,
+		//     cwd: '',
+		//     src: ['html/**', 'css/**', 'js/**', 'bower_components/**'],
+		//     dest: ''
+		// }
 
       // // makes all src relative to cwd
       // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
