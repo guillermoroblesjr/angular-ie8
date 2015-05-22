@@ -24,9 +24,6 @@
       },
       angular: {
         exports: 'angular'
-      },
-      d3: {
-        exports: 'd3'
       }
     },
   });
