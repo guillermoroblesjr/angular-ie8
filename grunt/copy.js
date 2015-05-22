@@ -12,16 +12,16 @@ module.exports = {
       // includes files within path and its sub-directories
       // { 
       // 	expand: true, 
-      // 	src: ['OPUSConfirmationsTrunk_v2.0/opus-confirmation-web/WebContent/html/**'], 
-      // 	dest: 'C:/jboss-5.1.0.GA-jdk6/jboss-5.1.0.GA/server/default/tmp/a6q5d12-yfomc6-i9ya6l58-1-i9ya7795-9r/opus-confirmation-web.war/testdir',
+      // 	src: [html/**'], 
+      // 	dest: 'testdir',
       // 	// filter: 'isFile'
       // },
 
 		{
 		    expand: true,
-		    cwd: 'OPUSConfirmationsTrunk_v2.0/opus-confirmation-web/WebContent/',
+		    cwd: '',
 		    src: ['html/**', 'css/**', 'js/**', 'bower_components/**'],
-		    dest: 'C:/jboss-5.1.0.GA-jdk6/jboss-5.1.0.GA/server/default/tmp/a6q5d12-yfomc6-i9ya6l58-1-i9yp1sby-9w/opus-confirmation-web.war/'
+		    dest: ''
 		}
 
       // // makes all src relative to cwd
