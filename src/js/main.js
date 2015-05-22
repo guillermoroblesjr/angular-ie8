@@ -1,7 +1,7 @@
 require(["require-config"], function () {
-
-	require(['app'], function () {
-		console.log("App started");
-	});
-
+    require(['polyfills'], function(){
+        require(['app'], function () {
+            console.log("App started");
+        });
+    });
 });
