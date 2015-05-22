@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": "2.1.8",
+    "mocha": "1.13.0",
+    "chai": "1.8.0",
+    "blanket": "1.1.0",
+    "lodash": "3.7.0",
+    "jquery": "1.11.1",
+    "papaparse": "4.1.1",
+    "angular": "1.2.0",
+    "bootstrap": "~3.3.4"
+  },
+  "devDependencies": {
+    "sinon-chai": "2.7.0",
+    "sinon": "1.14.1"
+  }
+}
