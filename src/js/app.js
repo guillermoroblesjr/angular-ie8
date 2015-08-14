@@ -2,11 +2,28 @@ define(function(require){
   
   'use strict';
 
-  var _ = require('lodash'),
-      angular = require('angular'),
-      Class = require('Class');
+  ////////////////////////////////////////////////////////////////////////
+  // DEBUGGING ONLY!
+  ////////////////////////////////////////////////////////////////////////
 
-  var MainController = require('components/my-component/controllers/Main');
+  window.DEBUGGING = {
+    CONTROLLERS: {},
+    CONTROLLERS_COUNT: 0
+  };
+
+  ////////////////////////////////////////////////////////////////////////
+  // DEPENDENCIES
+  ////////////////////////////////////////////////////////////////////////
+
+  var _ = require('lodash');
+  var angular = require('angular');
+
+  var pubsubService = require('components/publish-subscribe/services/pub-sub');
+  var SimpleStuffCtrl = require('components/SimpleStuff/controllers/Main');
+
+  ////////////////////////////////////////////////////////////////////////
+  // ANGULAR APP
+  ////////////////////////////////////////////////////////////////////////
 
   // Set up the Angular app dependencies
   var appDependencies = [];
@@ -18,11 +35,14 @@ define(function(require){
   // app.config([]);
 
   // Add the controllers
-  MainController();
+  SimpleStuffCtrl();
 
   // Add the directives
   // rootEventHandlerDirective();
   // rootEventHandlerTestDirective();
+
+  // Add the services
+  pubsubService( app );
 
   // Manually bind angular due to asyncronously loading
   angular.bootstrap(document, ['app']);
